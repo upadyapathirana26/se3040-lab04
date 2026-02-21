@@ -1,3 +1,8 @@
+const fs = require('fs');
+fs.writeFile('file.txt', 'Hello World!', function (err) {
+  if (err) throw err;
+  console.log('File saved!');
+});
 const myPromise = new Promise((resolve, reject) => {
   const condition = true; // change to false to test reject
   if (condition) {
